@@ -1,0 +1,88 @@
+object Form1: TForm1
+  Left = 233
+  Height = 449
+  Top = 116
+  Width = 746
+  Caption = 'Penne Pollo Downloader v0.1'
+  ClientHeight = 449
+  ClientWidth = 746
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '3.8.0.0'
+  object Memo1: TMemo
+    Left = 8
+    Height = 368
+    Top = 72
+    Width = 728
+    DoubleBuffered = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Courier'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentDoubleBuffered = False
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+  object label2: TLabel
+    Left = 8
+    Height = 20
+    Top = 8
+    Width = 108
+    Caption = 'Download URL:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object txtCommand: TEdit
+    Left = 128
+    Height = 23
+    Top = 8
+    Width = 520
+    TabOrder = 1
+  end
+  object ButtonDownload: TButton
+    Left = 661
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Download'
+    TabOrder = 2
+    OnClick = ButtonDownloadClick
+  end
+  object DirectoryEdit1: TDirectoryEdit
+    Left = 144
+    Height = 23
+    Top = 40
+    Width = 236
+    RootDir = '%USERPROFILE%\Downloads'
+    ShowHidden = False
+    ButtonWidth = 23
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 3
+    OnChange = DirectoryEdit1Change
+  end
+  object label3: TLabel
+    Left = 8
+    Height = 20
+    Top = 40
+    Width = 124
+    Caption = 'Download Folder:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+end
